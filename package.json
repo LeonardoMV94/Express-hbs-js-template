@@ -1,0 +1,33 @@
+{
+  "name": "express-hbs-js-template",
+  "version": "1.0.0",
+  "description": "template for express and handlebars",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npx nodemon app.js",
+    "container": "docker compose up -d"
+  },
+  "keywords": [],
+  "author": "Leonardo Muñoz <contacto@pctester.cl>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "fs-extra": "^11.2.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "rules": {
+      "no-undef": "error",
+      "no-unused-vars": "warn",
+      "no-path-concat": "off"
+    }
+  }
+}
