@@ -10,6 +10,13 @@ const route = (app) => {
   router.use('/', homeRouter)
   router.use('/auth', authRouter)
   router.use('/contacto', contacRouter)
+
+  router.use(/^\/(.+)/, (req, res) => {
+    res.render('404', {
+      layout: 'index',
+      titulo: '404'
+    })
+  })
 }
 
 module.exports = route
